@@ -9,8 +9,9 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - lukevivier/gh-pages:
-        token: $GIT_TOKEN
-        domain: mi-bear.github.io
+    - leipert/git-push:
+        gh_oauth: $GIT_TOKEN
+        repo: mi-bear/mi-bear.github.io
+        branch: master
         basedir: public
 

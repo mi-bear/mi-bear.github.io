@@ -2,15 +2,15 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.26"
         theme: minimal
-        flags: --buildDrafts=false
+        flags: --buildDrafts=true
 deploy:
   steps:
+    - install-packages:
+        packages: git ssh-client
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         repo: mi-bear/mi-bear.github.io
         branch: master
         basedir: public
-        gh_pages_domain: mi-bear.github.io
 

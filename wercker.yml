@@ -1,0 +1,16 @@
+box: wercker/default
+build:
+  steps:
+    - arjen/hugo-build:
+        version: "0.26"
+        theme: minimal
+        flags: --buildDrafts=false
+deploy:
+  steps:
+    - leipert/git-push:
+        gh_oauth: $GIT_TOKEN
+        repo: mi-bear/mi-bear.github.io
+        branch: master
+        basedir: public
+        gh_pages_domain: mi-bear.github.io
+

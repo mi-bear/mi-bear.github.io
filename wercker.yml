@@ -1,6 +1,12 @@
 box: debian
 build:
   steps:
+    - install-packages:
+      packages: git
+    - script:
+      name: download theme
+      code: |
+          $(git clone https://github.com/calintat/minimal ./themes/minimal)
     - arjen/hugo-build:
         theme: minimal
         flags: --buildDrafts=true

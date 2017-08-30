@@ -5,6 +5,10 @@ build:
         version: "0.26"
         theme: minimal
         flags: --buildDrafts=true
+    - script:
+        name: copy wercker.yml
+        code: |
+          cp wercker.yml public
 deploy:
   steps:
     - install-packages:

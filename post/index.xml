@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Bear&#39;s Lodge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Sep 2017 19:31:14 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Sep 2017 13:39:31 +0900</lastBuildDate>
     
 	<atom:link href="https://mi-bear.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FizzBuzz#1</title>
+      <link>https://mi-bear.github.io/post/20170907/</link>
+      <pubDate>Thu, 07 Sep 2017 13:39:31 +0900</pubDate>
+      
+      <guid>https://mi-bear.github.io/post/20170907/</guid>
+      <description>何か新しく言語をやってみるときはFizzBuzzで試すのがちょうど良い。
+gist-itをお試ししてみたかったのもあり。
+問題は一貫して下記の通り。
+1から100までの数字を出力するプログラム  3の倍数のときは数字の代わりにFizzを出力 5の倍数のときはBuzzを出力 3と5両方の倍数の場合にはFizzBuzzを出力  1. 愚直に割り算を利用する PHPの場合  Goの場合  Rubyの場合 (T.B.D)</description>
+    </item>
     
     <item>
       <title>CA.go#2</title>

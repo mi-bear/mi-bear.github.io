@@ -52,10 +52,10 @@ golang.org/x/sync による効率的な非同期処理  堀 良太さん
  errgroupってライトな使い方をイメージしているのかしらん。
  ぐるぐる回すバッチ処理のときに空きがあったら○○したい, なんてときに便利なsemaphore。処理の負荷ごとに重み付けができる。
  singleflight, キャッシュが切れたときに大量にリクエストが飛ぶ問題を防げる。DoChanはchannelを返却してくれる。大きなファイルのやり取りが多い場合, リクエストをまとめられるのは嬉しい。
- 可読性を高めることができる!複雑なチャネルはリファクタの大将になりがちである&amp;hellip;!!  Update to Go 1.9 寺田 貴俊さん
+ 可読性を高めることができる!複雑なチャネルはリファクタの大将になりがちである&amp;hellip;!!  Update to Go 1.9  寺田 貴俊さん
 この間フラッと1.9にアップデートしてみたけれどもきちんと見ていないので助かります。コレだ!!
 マイクロサービスへの対応について。
- アップデートしたらテストが失敗したところがある。 Monotonic Clocksが含まれたことによるTimeのequalがコケた。 1.9からはwall clack + Monotonic Clocksとなる。==演算子の比較はMonotonic Clocksを含んで比較する。 time.Time()型であってもMonotonic Clocksが含まれないケースがあるから必ずしもequalにならない&amp;hellip; time.Now().Truncate(0)でMonotonic Clocksを取り除いて対処した。 go test, go vetが簡略化。優しい世界。 GoDocをよく読むべし。 Test Helperが愛情たっぷり💖  トルテリリースまでの Go Tips 16 中川 武憲さん</description>
+ アップデートしたらテストが失敗したところがある。 Monotonic Clocksが含まれたことによるTimeのequalがコケた。 1.9からはwall clack + Monotonic Clocksとなる。==演算子の比較はMonotonic Clocksを含んで比較する。 time.Time()型であってもMonotonic Clocksが含まれないケースがあるから必ずしもequalにならない&amp;hellip; time.Now().Truncate(0)でMonotonic Clocksを取り除いて対処した。 go test, go vetが簡略化。優しい世界。 GoDocをよく読むべし。 Test Helperが愛情たっぷり💖  トルテリリースまでの Go Tips 16  中川 武憲さん</description>
     </item>
     
   </channel>

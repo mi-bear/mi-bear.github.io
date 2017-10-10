@@ -6,10 +6,41 @@
     <description>Recent content on Bear&#39;s Lodge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Sep 2017 16:54:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Oct 2017 20:35:07 +0900</lastBuildDate>
     
 	<atom:link href="https://mi-bear.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DevFest2017で喋ってみた</title>
+      <link>https://mi-bear.github.io/post/20171010/</link>
+      <pubDate>Tue, 10 Oct 2017 20:35:07 +0900</pubDate>
+      
+      <guid>https://mi-bear.github.io/post/20171010/</guid>
+      <description>なんと今日は結構記念日！なので思う存分寿司を喰らいました。
+ 鉄板寿司
+A post shared by Michiru Shirakawa (@micchiebear) on Oct 10, 2017 at 4:38am PDT
+ 
+さらに本日は戦闘(銭湯)の日らしく, 銭湯に参戦しましたが, 2件ある近所の銭湯のうち1件は並びが出ていたので静かなほうに行きました。
+突然話は変わります。
+DevFest2017というGoogle関連Developersのイベントで, 初のセッションを担当しました。
+きっかけは, わたしたちが所属しているWomenWhoGoTokyoというGo言語の女性があつまるコミュニティのJapanese版として仲間がもっと欲しいという気持ち, そして, 本当はそんなに女性限定とは思っていないんです。
+自分自身としては, そんなにガチでなくていい, とにかく書きたい気持ちで情報共有したり, それどうやって学んだの〜？みたいな話をどんどんしていきたいし, もし初めての人がいるならば一緒にやっていきたいので最初でお手伝いできることがあれば何でもやりたいから！！ というものになります。
+今回は一緒に働いていた仲間でもある@mom0tomoさんとコラボしました。
+ わたしたちの魂のセッションです&amp;hellip;
+作っているときはとてもとても楽しくて, また一緒にやりたいな。
+ハードル気にせずにどんどんGoの世界にみんなに飛び込んで欲しくて, こういう内容になりました。
+これからが楽しみ&amp;hellip;!!!
+そして, 実は, 昨日からWomenWhoGoTokyoのスタッフにもなりました。
+今までスタッフをやっていただいた皆さんに感謝をしつつ, これからぐいぐい頑張っていきますʕ•ᴥ•ʔ
+今回お話を聞かせていただいたセッションも多数あります。
+自分自身の好みの傾向もあり, Go縛りになってしまいましたが, Go2.0, 設計, クラウドへの想いが高まり, 今すぐにでも何かしないとという気持ちになっています。
+初めてのDevFest, 素敵すぎました！
+次も更に突っ込んだ話でセッションしたいなあ&amp;hellip;なんて思いつつも, ボランティアスタッフとして役に立てることをしていきたいという気持ちで溢れています。
+運営スタッフの皆さん・スピーカーの皆さん・ご来場頂いた皆さん, みんなに感謝だ〜
+ 写真もらったฅʕ•ᴥ•ʔฅ
+A post shared by Michiru Shirakawa (@micchiebear) on Oct 8, 2017 at 11:56pm PDT</description>
+    </item>
     
     <item>
       <title>FizzBuzz#2</title>

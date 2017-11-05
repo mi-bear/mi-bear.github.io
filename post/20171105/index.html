@@ -139,21 +139,535 @@
 </div>
 
 
-    <br> <div class="text-justify"><p>昨日のVimConf2017に引き続き, 2017年秋のGoCon。<br />
+    <br> <div class="text-justify">
+
+<p>昨日のVimConf2017に引き続き, 2017年秋のGoCon。<br />
 抽選に当ってとっても嬉しいʕ•ᴥ•ʔ</p>
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BbGX3xPlthS/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Gopher君</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Michiru Shirakawa (@micchiebear) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-05T04:07:55+00:00">Nov 4, 2017 at 9:07pm PDT</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
-<p>TODO: スライドを集めて, 色々これから埋めていきます。</p>
+<p>抜け漏れも多々ありますが, 色々とメモをしています。もうちょっとあとの自分のため！</p>
 
-<p>最後に:</p>
+<hr />
+
+<h1 id="特別企画-パネルディスカッション">🐻 特別企画: パネルディスカッション</h1>
+
+<p>mattnさんはじめ, 全4名のすごい人達の対談で, 大変濃かったです。</p>
+
+<h4 id="アップグレード案件で手こずったところは">アップグレード案件で手こずったところは？</h4>
+
+<ul>
+<li>Goは動かしっぱなしでapt updateも問題なく。Windowsでも問題ない。</li>
+<li>近々オンラインアップデートをする予定があるが, ほぼ不安はない。</li>
+<li>Goのバージョンを上げたときは必ずソースから再Buildしないと新しいバージョンの恩恵が受けられない。</li>
+</ul>
+
+<h4 id="goherになったきっかけ">Goherになったきっかけ</h4>
+
+<ul>
+<li>8年くらい目にニュースで取り上げられたあとに触った。そのあとみんながクールダウンしたあとも使い続けていた。</li>
+<li>Windowsでしっかり動いたから。Goまわりは Windowsハッカーが多い。</li>
+<li>画像のサムネイルを非同期で変換するジョブワーカー</li>
+<li>mattnさんが使っていたから by kaoriya</li>
+<li>周りで誰も使っている人がいなかったから。<code>変態言語</code>ということで喜んで。</li>
+</ul>
+
+<h4 id="windowsでgo使っている人">WindowsでGo使っている人</h4>
+
+<ul>
+<li>会場で0.5%</li>
+</ul>
+
+<h4 id="windowsで生で書いていることの面白さ">Windowsで生で書いていることの面白さ</h4>
+
+<ul>
+<li>GoはUnix側に倒していない。</li>
+<li>ファイルパスパッケージやOSパッケージは, Unixに合わせるためのパッケージということではない。</li>
+<li>exeを作ってバイナリ配布することができること。配布のしやすさ。</li>
+</ul>
+
+<h4 id="windowsだけではなくてlinuxにバイナリ配布することはあります">WindowsだけではなくてLinuxにバイナリ配布することはあります？</h4>
+
+<ul>
+<li>このコードはWindowsでは動かないな, でしか動かないな, は頭に入っている。</li>
+<li>Vimのコンパイルスイッチは非常にひどいが, Goはしっかり別れている。</li>
+</ul>
+
+<h4 id="今後あったらいいなという本">今後あったらいいなという本</h4>
+
+<ul>
+<li>知見はどんどんブログや本で出していくといい。</li>
+<li>自分も積極的にフィードバックしたい。</li>
+<li>Goでやるといいもの, Goで機械学習, ネットワークプログラムのエッセンス等</li>
+<li>アルゴリズム系をしっかり勉強できるものがあるといい。</li>
+<li>ノウハウ, パターン集が欲しい, あまり表に出てきていないので。</li>
+<li><code>最新情報はブログ</code></li>
+<li>本は古くなってしまう。結局公式ドキュメントを見ることに。</li>
+<li>Goの公式ドキュメントは充実している。</li>
+</ul>
+
+<h4 id="実際に使っているパッケージ">実際に使っているパッケージ</h4>
+
+<ul>
+<li>ロギングは標準で書いてる。</li>
+<li>ファイルにログとして出力してローテート回す。</li>
+<li>JSONで出力。</li>
+<li>gorutineの数がどんどん増えていくとき(サーバ増やして)は, モニタリングしておくと良かった。</li>
+</ul>
+
+<h4 id="go2やっていきについて期待しているところ">Go2やっていきについて期待しているところ</h4>
+
+<ul>
+<li>バグの互換性を引きずっているところがある。(1世代)</li>
+<li>バグが継承されているところがなくなるのであれば, それだけでもGo2は価値がある。</li>
+<li>ジェネリクスがあるといいなあ。</li>
+<li>実行バイナリのサイズ小さくならないかなあ。</li>
+<li>使ってみて困った, といったようなレポートベースのIssueがあると嬉しい。</li>
+<li>Goは安全に倒そうとしている。そのせいでちょっと遅くなっているところもある。コレがGo2で外せないかなと思っている。</li>
+</ul>
+
+<h4 id="goを入門者にすすめるか">Goを入門者にすすめるか</h4>
+
+<ul>
+<li>研究機関や学校でも教えたほうが良いと思う。</li>
+<li>Vimの人としての危機感…Goはビジュアルプログラミング言語になり得るのでは。</li>
+<li>tenntennさん, このあいだ高校生に教えた。
+
+<ul>
+<li>何か別の言語を学んでいる人前提で教えていたことしかなかったので, プログラミング入門者には難しかった。</li>
+<li>向いているとは思うが, 具体的にどう教えるのが良いのか。</li>
+</ul></li>
+<li>GoはPlaygroundがあるので最初に何かできているものから学ぶのが良いのでは。</li>
+<li><code>このサンプルを作る</code>からはじめるのにいいものって何だろう？
+
+<ul>
+<li>ちょうどいい具合にGoが学べて離れていかないもの。</li>
+<li>Raspberry Pi でゲーム作ってみるとか？</li>
+</ul></li>
+</ul>
+
+<h4 id="goの互換性を引きずっているバグは具体的になに">Goの互換性を引きずっているバグは具体的になに？</h4>
+
+<ul>
+<li>OSのCreate, Windowsはフラグが1つ足りない。互換性が壊れるから直さないと言われてこのままクローズしそう。</li>
+</ul>
+
+<h4 id="mocが必要になるようなテストってどうするの">mocが必要になるようなテストってどうするの？</h4>
+
+<ul>
+<li>reflectionで無理やりつくる。お手製のmocライブラリを書いている。</li>
+<li>サードパーティーに頼りたくない派。</li>
+<li>Readerを渡して処理するとか。最初からテストで使うことを想定して書いている。</li>
+<li>assertが欲しい場合はtestifyを使っている。</li>
+</ul>
+
+<h4 id="go本体を知るために勉強するには">Go本体を知るために勉強するには？</h4>
+
+<ul>
+<li>ドキュメントの修正からはじめていくのはどうでしょうか？</li>
+<li>チャレンジ精神は大切。</li>
+<li>勢いも大切。</li>
+<li>議論も大切。</li>
+</ul>
+
+<h4 id="goとrdbmsをやり取りするのに一番良いのは">GoとRDBMSをやり取りするのに一番良いのは？</h4>
+
+<ul>
+<li>リフレクションが多くてGoぽくない, 今後どうなっていくの？</li>
+<li>database/sqlがかなり安全に倒している。</li>
+<li>Go2でドラスティックに変わっていくのでは。</li>
+<li>mattnさんが使っているORMについてはgorp, gormにしようと思ってやめた。</li>
+</ul>
+
+<h4 id="気に入っているoss">気に入っているOSS</h4>
+
+<ul>
+<li>Goの本体, 標準ライブラリは好きで, これ読んでいるだけで新幹線行って帰って来れる。</li>
+</ul>
+
+<p><code>次は過激な話もしたいとのこと。</code></p>
+
+<h1 id="go-at-digitalocean-fatihさん">🐻 Go at DigitalOcean / fatihさん</h1>
+
+<script async class="speakerdeck-embed" data-id="f978bde172bf442e9a53b1d162529e38" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<ul>
+<li>苦労をツールで解決して, すばらしいものがたくさんできあがっている。</li>
+<li>○○一夜にしてならず, を感じた。</li>
+</ul>
+
+<h1 id="go-microservices-at-mercari-deeeetさん">🐻 Go + microservices at Mercari / deeeetさん</h1>
+
+<p><a href="https://talks.godoc.org/github.com/tcnksm/talks/2017/11/gocon2017/gocon2017.slide#1">https://talks.godoc.org/github.com/tcnksm/talks/2017/11/gocon2017/gocon2017.slide#1</a></p>
+
+<ul>
+<li>API ゲートウェイ
+
+<ul>
+<li>Routing</li>
+<li>認証・認可(各サービスが利用できるように)</li>
+<li>プロトコルのトランスフォーメーション</li>
+<li>新規のときはgRPC, 古いやつ(PHP)はJSONに切り替える。</li>
+<li>Request アグリゲート</li>
+</ul></li>
+<li>マイクロサービスそのもの
+
+<ul>
+<li>オファー機能</li>
+<li>サーチサービス</li>
+<li>TimeLineをパーソナライゼーション</li>
+<li>フレームワークは利用していない, GoとgRPCのみ。</li>
+</ul></li>
+<li>まずgRPCのプロトコルバッファの定義を書く。
+
+<ul>
+<li>サーバを生成してマイクロサービスのアプリを書く。</li>
+<li>APIゲートウェイ側に実装</li>
+<li>Goのリファレンス実装</li>
+</ul></li>
+<li>gRPC
+
+<ul>
+<li>高速かつ汎用的に使えるRPCフレームワーク</li>
+<li>多言語のツールセットがある。</li>
+<li>プロトコルバッファの書き方を覚えれば, サーバとクライアントができてします。</li>
+<li>ロジックに集中できる。</li>
+</ul></li>
+<li>なぜRESTじゃないのか！
+
+<ul>
+<li>完璧なRESTはかけない。</li>
+<li>早くサービスをなんとかしたいのに悩む時間が長い。</li>
+</ul></li>
+<li>ドキュメンテーションを生成するツールが出てきている。
+
+<ul>
+<li>各言語ごとのリポジトリに生成するようにCIで設定している。</li>
+<li>プルリクエストを作ると, そのプルリクエストも各リポジトリのPRとして作成される。</li>
+</ul></li>
+<li>gRPCのロードバランシング
+
+<ul>
+<li>どんどん変わっていく環境だと正しくロードバランシングすることが結構難しい。</li>
+<li>リクエストを落とさずに正しくswapしたい。</li>
+<li>gRPCはコネクションを使いまわしていることを忘れてはならない。</li>
+<li>クライアントサイドでロードバランシングをちゃんとする。</li>
+<li>DNSリゾルバがgRPCの1.6で入った。</li>
+</ul></li>
+<li>ロギングやメトリクスやトラッキング
+
+<ul>
+<li>共通のfuncとして実装したい。</li>
+<li>httpハンドラに実装するには？ よくやるのはmiddleware</li>
+<li>gRPCはinterceptorを使う。</li>
+<li>関数を返却する。</li>
+<li>go-grpc-middleware, chain関数
+
+<ul>
+<li><a href="https://github.com/grpc-ecosystem/go-grpc-middleware">GitHub - grpc-ecosystem/go-grpc-middleware: Golang gRPC Middlewares: interceptor chaining, auth, logging, retries and more.</a></li>
+</ul></li>
+<li>分散トレーシング</li>
+</ul></li>
+</ul>
+
+<h1 id="大規模で運用するためのモニタリングエージェントを自作する話-huydxさん">🐻 大規模で運用するためのモニタリングエージェントを自作する話 / huydxさん</h1>
+
+<ul>
+<li>モニタリングエージェントとは何か。
+
+<ul>
+<li>Not a generic log transfer</li>
+<li>社内のレポートにあわせてマネジメントする。暗号化とか。</li>
+<li>開発速度はオープンソースを使うと最初は楽だけれども, 個別の事情に合わせることを考えたら自分で作るほうが安全な選択肢。</li>
+</ul></li>
+<li>interfaceの重要性。</li>
+<li>Javaが多い。</li>
+<li>だからGoを選んだ。
+
+<ul>
+<li><code>その人のRustと僕のRust</code></li>
+<li><code>その人のScalaと僕のScala</code></li>
+</ul></li>
+</ul>
+
+<h1 id="prometheusから考察するgoのロギング-大和屋貴仁さん">🐻 Prometheusから考察するGoのロギング / 大和屋貴仁さん</h1>
+
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/jkIIunPK5iCPnW" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser88ff5b/gocon2017go" title="Gocon2017：Goのロギング周りの考察" target="_blank">Gocon2017：Goのロギング周りの考察</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser88ff5b" target="_blank">貴仁 大和屋</a></strong> </div></p>
+
+<ul>
+<li>Goのロギング事情</li>
+<li>PrometheusのMLからGoのロギングに興味を持った。</li>
+<li>GoogleのSRE本, 入門から運用まで(Prometheus)のスライドを読む。</li>
+<li>Gokitのロギング仕様ブック</li>
+<li>Goで不便なところ
+
+<ul>
+<li>シンプル</li>
+<li>非構造体</li>
+<li>限定的な設定項目</li>
+<li>loggerは型で定義されている</li>
+<li>Globalなloggerオブジェクトが提供される</li>
+<li>-&gt;
+
+<ul>
+<li>型で定義されているので別の実装で定義しにくい。</li>
+<li>importしたライブラリのロギングを制御しにくい。</li>
+<li>レベル付ロギングが欲しい。</li>
+</ul></li>
+</ul></li>
+<li>ロギングライブラリの乱立 -&gt; 34種類もあるんだぜ
+
+<ul>
+<li>go-kit/kit/log
+
+<ul>
+<li>文脈情報をwithで渡す。</li>
+</ul></li>
+<li>syncthins</li>
+<li>terraform
+
+<ul>
+<li>logutilsに切り替え可能。</li>
+<li>レベル付ができるようになっている。</li>
+<li>レベルは何でも良い。</li>
+</ul></li>
+<li>kubernetes
+
+<ul>
+<li>golang/glog</li>
+</ul></li>
+<li>Grafana
+
+<ul>
+<li>log15</li>
+</ul></li>
+<li>moby
+
+<ul>
+<li>logrus</li>
+<li>出力は豊富</li>
+</ul></li>
+</ul></li>
+<li>ライブラリは特徴があるけれども, 基本的に同じ。</li>
+<li>go-kitはこの世界のなかで完結しているので天国に見えた。</li>
+<li>ローテート機能については見ていないけどひょっとしたらglogがもっているかも?</li>
+</ul>
+
+<h1 id="goのcompileの仕組みと高速化への取り組み-niconegotoさん">🐻 Goのcompileの仕組みと高速化への取り組み / niconegotoさん</h1>
+
+<script async class="speakerdeck-embed" data-id="bb6ab2e63e9e48c59dec5d9544ebe105" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<ul>
+<li>構文解析</li>
+<li>mutexの追加</li>
+<li>大きい値でたくさん並列すると早いのかというとそういうことではない。</li>
+<li>internal以下読んでパッチを送ろう。</li>
+</ul>
+
+<h1 id="async-persistent-fast-and-stable-enough-queue-worker-using-go-and-postgresql-achikuさん">🐻 Async, Persistent, Fast, and Stable &ldquo;Enough&rdquo; Queue/Worker Using Go and PostgreSQL / _achikuさん</h1>
+
+<script async class="speakerdeck-embed" data-id="a63dfb19111541ef8897a1d6157cfe75" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<ul>
+<li>5人のチーム</li>
+<li>とてもシンプルに保っている。</li>
+<li>queue/worker</li>
+<li>que-go
+
+<ul>
+<li>もともとはRubyで書かれているkeiというライブラリが元になっている。</li>
+<li>1テーブルで複数のqueue</li>
+<li>advisory lock</li>
+<li>drawbacks
+
+<ul>
+<li>パフォーマンス障害が発生するケース</li>
+<li>長いjob(1万秒くらいスリープ), dequeueがひどぢことになる。</li>
+<li>int64じゃないとロックできない。</li>
+<li>ロックするSQLがCTE? for回しながらlockしにいかないと駄目。</li>
+</ul></li>
+<li>application code</li>
+</ul></li>
+<li>External API Serviceはトランザクションで守られない。
+
+<ul>
+<li>1ジョブ1トランザクションにしなさい。</li>
+</ul></li>
+<li>“やっていくしかない”</li>
+<li>APIサーバとpostgresサーバは別モノ</li>
+<li>quejobsというqueテーブルにargsというJSONタイプのカラムを作っておく。パラメータだけを保存する。どの関数, どのque, 何を入れるかを表現している。パラメータが減った場合は, 古いほうのWorkerが動かなくなってしまう。</li>
+</ul>
+
+<h1 id="diff-algorithm-in-go-cubicdaiyaさん">🐻 Diff algorithm in Go / cubicdaiyaさん</h1>
+
+<ul>
+<li>サーバサイドのミドルウェアあたりをGoで書いている。</li>
+<li>Edit Distance
+
+<ul>
+<li>置き換えの操作方法？</li>
+<li>大文字のCは同じ要素, Dは文字を消す, Aは文字を追加する。</li>
+<li>追加のAと削除のDを集めたもの。</li>
+</ul></li>
+<li>LCS
+
+<ul>
+<li>Longest Common Subsequence</li>
+<li>同一のものの一番長いもの。</li>
+</ul></li>
+<li>SES
+
+<ul>
+<li>Shortest Edit Script</li>
+<li>変換する手順。</li>
+</ul></li>
+<li>diffのアルゴリズム。
+
+<ul>
+<li><a href="https://github.com/cubicdaiya/gonp/blob/master/gonp.go">gonp/gonp.go at master cubicdaiya/gonp GitHub</a></li>
+</ul></li>
+</ul>
+
+<h1 id="ebiten-goのシンプルな2dゲームライブラリ-hajimehoshiさん">🐻 Ebiten - Goのシンプルな2Dゲームライブラリ / hajimehoshiさん</h1>
+
+<p><a href="https://docs.google.com/presentation/d/e/2PACX-1vSSbSxPObBZcJHjvUpAt-HEJVLaux2FQBpJbvbxInJgmEhxSn-lVxTVxUMmUNQwtJtC8w6_HkhuW2hk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p">https://docs.google.com/presentation/d/e/2PACX-1vSSbSxPObBZcJHjvUpAt-HEJVLaux2FQBpJbvbxInJgmEhxSn-lVxTVxUMmUNQwtJtC8w6_HkhuW2hk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.p</a></p>
+
+<ul>
+<li>どうやってマルチプラットフォームを実現したか。</li>
+<li>Windows, mac freeBSD, Linux</li>
+<li>Android, iOS</li>
+<li>前回の続きでEdgeが動くようになった。</li>
+<li>今年の5月にリリースしてから新しいものが未だに開発中。なので新しいゲームを作りたい。</li>
+<li>Ebiten Playground</li>
+<li><a href="https://github.com/hajimehoshi/oto">https://github.com/hajimehoshi/oto</a></li>
+<li>MP3を推している, なるべくブラウザNativeのデコーダーを使いたいから。パフォーマンスのため。</li>
+<li>GLFWはCgo不可避, 大変遅かったり壊れたり。クロスコンパイルが簡単にできない。大変なんですね。</li>
+<li>GopherJS, goの関数を指定しているのでJSの関数になる。</li>
+<li>gomobile
+
+<ul>
+<li>gomobile build:
+
+<ul>
+<li>簡単だけど融通が効かない。</li>
+<li>広告を入れるのが困難。</li>
+<li>Store公開時の署名を入れる行為が大変。</li>
+</ul></li>
+<li>gomobile bind: 動的ライブラリ
+
+<ul>
+<li>なんでもできるけど, Goで完結できない。</li>
+</ul></li>
+</ul></li>
+<li>なぜKindleFire, GPD Pocketなのか。</li>
+<li>gomobile, Goそのもののバグを発見。</li>
+<li>なぜ海老天か。RPGツクールをつくっていたエンターブレイン社, この会社が2ch上でエビと呼ばれていたから。</li>
+<li>今は2Dに注力したい。</li>
+</ul>
+
+<h1 id="eviewdog-and-static-analysis-for-go-haya14busaさん">🐻 eviewdog and static analysis for Go / haya14busaさん</h1>
+
+<p><a href="http://haya14busa.com/reviewdog/">reviewdog を飼ってコードレビューや開発を改善しませんか - haya14busa</a>
+- goimportの挙動がいい感じになったよ！
+- golintのコメントを書いてね的な話が辛い。
+- 既存のリポジトリプロジェクトに対応しようとすると死ぬ。
+- Vim内でしか使えなかったerrorformatを外でも使えるようになる。
+- 文字列のリストなのでコマンドラインの引数で渡せる。
+- Vimのエコシステムを活用できる。
+- Goで書いてよかったこと。
+    - 1バイナリで書けた。
+    - シンプル
+    - すぐに動くものができた。
+- 今のところはGithub, GithubEnterpriseのみ。
+- Feature
+    - もっとローカルで気軽に実行したい。
+    - Editorからでもちゃんと使えるようにしたい。
+- revoewdogがあればgolintのウザさをスキップできるよ。
+- switchのcaseが網羅されているかをGoでチェックできない。
+    - gosumcheck
+    - <a href="https://github.com/haya14busa/gosum">GitHub - haya14busa/gosum: Sum/Union/Variant Type in Go and Static Check Tool of switch-case handling</a>
+- 既存のサービスで途中から入れるときはreviewdogで可能か？
+    - 同じファイルのエラーを表示したいというアイデアはある。</p>
+
+<h1 id="lt大会-lightning-talks">🐻 LT大会 (Lightning Talks)</h1>
+
+<h4 id="パッケージ構成っていつでも悩ましい-keigodasuさん">🍎 パッケージ構成っていつでも悩ましい / keigodasuさん</h4>
+
+<ul>
+<li>ビッグデータ, ミドルウェアのコミュニティ</li>
+<li>君のJava, 僕のJavaを撲滅したい。</li>
+<li>DDDぽく書いていた。</li>
+<li>ときにはGoに従わない勇気も大切。</li>
+</ul>
+
+<h4 id="consider-better-error-handling-for-web-apps-izumin5210さん">🍎 Consider better error handling for web apps / izumin5210さん</h4>
+
+<ul>
+<li>より良いエラーハンドリング</li>
+<li>なぜWrapするのか。
+
+<ul>
+<li>新しいメッセージを追加したいとき。</li>
+</ul></li>
+<li>どこからエラーレポートするか。
+
+<ul>
+<li>500する前。</li>
+<li>どこでnotifyしているかわからないので何度も同じエラーを書くとか。</li>
+</ul></li>
+<li>contextをerrorに追加する。</li>
+</ul>
+
+<h4 id="goだってパフォーマンスチューニングが必要です-uskさん">🍎 Goだってパフォーマンスチューニングが必要です / uskさん</h4>
+
+<ul>
+<li>GCCがあるからといってメモリ管理を気にしなくていいなんてことはない。</li>
+<li>GCが効くのでメモリ使用量がMaxまでいくことはないけれども, 間に合わない場合は死ぬのできちんと設計しましょう。</li>
+<li>Benchmarkはしっかりと取ろう。</li>
+<li><code>pprof</code>を使おう。</li>
+</ul>
+
+<h4 id="バイオインフォマティクスにgo言語を持ち込んだ話-otiai10さん">🍎 バイオインフォマティクスにGo言語を持ち込んだ話 / otiai10さん</h4>
+
+<ul>
+<li>cliをクロスコンパイルしてWindowsの人に配れる。</li>
+<li>ただ, だれも助けてくれない。Python, Rが多い世界。</li>
+<li>生物学上のあいまいさ…</li>
+<li>最初にやったら目立てる。</li>
+<li>gae Goで商売できる。</li>
+<li>bioinfoのsalaryが低い。</li>
+<li>どう活かすか, どこで活かすか。</li>
+<li>経歴が足りていないこと。これは個性。</li>
+<li><code>○○ではないことは個性</code></li>
+<li><code>シェイプ オブ ライフ</code></li>
+</ul>
+
+<h4 id="goでインタプリタを書いてみよう-knsh14さん">🍎 Goでインタプリタを書いてみよう / knsh14さん</h4>
+
+<ul>
+<li>人生で一度はオレオレ言語を作ってみたい！</li>
+<li>Goで良さそうな本が出たのでやってみたかった。</li>
+<li>Parserの章でASTの気持ちになれた。</li>
+<li>Goのプラクティスに従わないことがある。</li>
+<li><a href="http://deeeet.com/writing/2017/01/12/go-interpreter/">Writing An Interpreter In Goを読んだ | SOTA</a></li>
+</ul>
+
+<hr />
+
+<p>最後に:<br />
+これからやること。</p>
 
 <ul>
 <li>goroutineをちゃんと理解して書こう。</li>
 <li><code>logrus</code>から<code>zap</code>に移行してみよう。</li>
 <li>privateにgodocを置きたい。</li>
 </ul>
+
+<p>メルカリさん, Googleさん, スタッフのみなさん, スピーカーのみなさん, ありがとうございました！！</p>
+
+<p><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:40.370370370370374% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BbG2L-9lNPO/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">メルカリさん, Googleさん, ありがとうございました！発表するときは着ますฅʕ•ᴥ•ʔฅ</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Michiru Shirakawa (@micchiebear) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-05T08:32:50+00:00">Nov 5, 2017 at 1:32am PDT</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script></p>
 </div>
 
     

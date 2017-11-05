@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mi-bear.github.io/post/20171104/</loc>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mi-bear.github.io/post/20171010/</loc>
     <lastmod>2017-10-10T20:35:07+09:00</lastmod>
   </url>
@@ -34,7 +39,7 @@
   
   <url>
     <loc>https://mi-bear.github.io/</loc>
-    <lastmod>2017-10-10T20:35:07+09:00</lastmod>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,7 +50,7 @@
   
   <url>
     <loc>https://mi-bear.github.io/tags/event/</loc>
-    <lastmod>2017-10-10T20:35:07+09:00</lastmod>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,13 +74,19 @@
   
   <url>
     <loc>https://mi-bear.github.io/post/</loc>
-    <lastmod>2017-10-10T20:35:07+09:00</lastmod>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mi-bear.github.io/tags/</loc>
-    <lastmod>2017-10-10T20:35:07+09:00</lastmod>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mi-bear.github.io/tags/vim/</loc>
+    <lastmod>2017-11-05T13:05:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   

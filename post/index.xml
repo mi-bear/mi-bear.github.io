@@ -6,10 +6,42 @@
     <description>Recent content in Posts on Bear&#39;s Lodge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Oct 2017 20:35:07 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Nov 2017 13:05:33 +0900</lastBuildDate>
     
 	<atom:link href="https://mi-bear.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VimConf2017という大変エモいイベント</title>
+      <link>https://mi-bear.github.io/post/20171104/</link>
+      <pubDate>Sun, 05 Nov 2017 13:05:33 +0900</pubDate>
+      
+      <guid>https://mi-bear.github.io/post/20171104/</guid>
+      <description>7月に12インチのMacBookを購入してから, 軽いGoの開発環境が欲しくて欲しくて調べていたところ, vim-goというナウいパッケージの存在を知りました。
+それからというもの, vimの修行中です。3ヶ月目。
+修行という修行はできておらず, vimtutorも1度しかやっていないし, 今書いているものは何がなんでもvimでやろうと決めていますが, それほど効率的な書き方ができているわけではありません。
+心が折れそう。
+ところが, Vimのカンファレンスがあるというじゃないですか。
+vim力を高めながらvim活に毎日勤しみたく, 参加することを決めました。
+ところが, Twitterではボソボソとつぶやいていましたが, いつもなら記録しているレポートを一切しなかった&amp;hellip;!!!
+それだけ楽しかったということと, 自分にとっては高レベルの話が多くて必死だったということです&amp;hellip;
+よって, 覚えている限りの気持ち的なものを書いていきます。
+VimConf 2017 - An international Vim Conference
+VimConfはinternationalなカンファレンスなのですね。
+なので, 英語と日本語の同時通訳があり, 多くのスピーカーの皆さんは英語でお話されていました。
+このカンファレンスで最も印象的であった出来事の一つが, 翻訳者の@ujmさんの個性的でかつ盛り上がりのある, 流れるような同時翻訳です。
+英語力ももちろんですが, 話題となっている技術についても深い知識がなければできないことだと思います。ものすごく尊敬します。
+次に, vimmerのみなさんの情熱と勢いと度胸。
+毎日自分で使っていれば, 必ずあたりまえじゃない疑問や直したいところ, バグが見つかるはず。
+もしかすると自分にもできるのかもしれないと思いました。
+しかも, Goで書けるんですね。
+ なんだか良いものをたくさんいただきました。
+A post shared by Michiru Shirakawa (@micchiebear) on Nov 3, 2017 at 8:20pm PDT
+  大変美味しいお弁当と白い恋人。美味しい!! 感謝!!!
+わたしはvim-goを使いたくてvimをはじめたばかりの人間なので, まずは使い倒して何かしらの貢献をしたい!!!
+Google翻訳を利用しつつ拙い英語で感謝の気持ちを伝えた&amp;hellip;つもりです。
+I started vim because I want to use vim-go.</description>
+    </item>
     
     <item>
       <title>DevFest2017で喋ってみた</title>
